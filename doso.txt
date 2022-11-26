@@ -1,0 +1,21 @@
+--->    This header file contains all the file I/O operations definition.
+--->    It is not a file opening mode.
+--->    If your second. cpp has more than one function and you want all of it in main() , put all the forward declarations of your functions in second.
+--->    The public members of the base class can only be accessed by the member functions of the derived class.
+--->    A virtual function is declared to be “pure” using the curious =0 syntax.
+--->    virtual int func...........
+--->    The word polymorphism indicates many-forms.
+--->    Inheritance is also another feature which is not supported by these languages.
+--->    It is an object-based programming language.
+--->    bla bla bla 10th ko
+--->    bla bla bla 11th ko
+--->    bla bla bla 12th ko
+--->    As the word binary itself means 2 therefore a binary operator operates on two operands.
+--->    +(adding two operands) requires two operands whereas ++(increases value by 1), –(decreases value by 1) and *(dereferencing operator used for accessing value of pointers) requires only one operand.
+--->    &, == and / requires two operands whereas — requires only one operand, in general, it decreases the value of operand by 1.
+--->    A template is a formula for creating a generic class
+--->    Every string template is used to replace the string with another string at runtime.
+--->    template < >
+--->    An exception is defined as the problem in C++ program that arises during the execution of the program for example divide by zero error.
+--->    By default, whenever a program detects an exception the program crashes as it does not know how to handle it hence results in the termination of the program.
+--->    We need to handle exceptions in a program to avoid any unexpected behaviour during run-time because that behaviour may affect other parts of the program. Also, an exception is detected during run-time, therefore, a program may compile successfully even with some exceptions cases in your program.

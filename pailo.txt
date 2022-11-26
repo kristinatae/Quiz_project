@@ -1,0 +1,85 @@
+:) Which header file is required to use file I/O operations?    
+---> a) <ifstream>     ---> b) <ostream>    
+---> c) <fstream>      --->  d) <iostream>
+c
+:) Which of the following is not used as a file opening mode?   
+---> a) ios::trunc   ---> b) ios::binary  
+---> c) ios::in      ---> d) ios::ate
+a
+:) Which of the following statements are correct?   
+---> a) It is not possible to combine two or more file opening mode in open() method.  ---> b) It is possible to combine two or more file opening mode in open() method.    
+---> c) ios::in and ios::out are input and output file opening mode respectively. 
+b
+:) If a class is derived privately from a base class then:
+---> a) no members of the base class is inherited                                            ---> b) all members are accessible by the derived class
+---> c) all the members are inherited by the class but are hidden and cannot be accessible   ---> d) no derivation of the class gives an error
+a
+:) What is a pure virtual function?
+---> a) A virtual function defined inside the base class            ---> b) A virtual function that has no definition relative to the base class
+---> c) A virtual function that is defined inside the derived class ---> d) Any function that is made virtual
+d
+:) Which is the correct syntax of declaring a virtual function?
+---> a) virtual int func();     ---> b) virtual int func(){};
+---> c) inline virtual func();  ---> d) inline virtual func(){};
+b
+:) Which among the following best describes polymorphism?
+---> a) It is the ability for a message/data to be processed in more than one form  ---> b) It is the ability for a message/data to be processed in only 1 form
+---> c) It is the ability for many messages/data to be processed in one way         ---> d) It is the ability for undefined message/data to be processed in at least one way
+a
+:) What do you call the languages that support classes but not polymorphism?
+---> a) Class based language    ---> b) Procedure Oriented language
+---> c) Object-based language   ---> d) If classes are supported, polymorphism will always be supported
+c
+:) Which among the following is the language which supports classes but not polymorphism?
+---> a) SmallTalk   ---> b) Java
+---> c) C++         ---> d) Ad
+d 
+:) Which among the following best describes encapsulation? 
+---> a) It is a way of combining various data members into a single unit    ---> b) Inheritance
+---> c) Code modification can be additional overhead                        ---> d) Using Access Specifiers
+d
+While using encapsulation, which among the following is possible?
+---> a) It is a way of combining various member functions into a single unit    ---> b) Abstraction
+---> C) Data member's data type can be changed without changing any other code  ---> d) Using only private members
+c
+Which feature can be implemented using encapsulation?
+---> a) It is a way of combining various data members and member functions into a single unit which can operate on any data ---> b) Polymorphism
+---> c) Data member's type can't be changed, or whole code have to be changed                                               ---> d) Using inheritance
+c
+What is a binary operator?
+---> a) Operator that performs its action on a single operand   ---> b) Operator that performs its action on two operand
+---> c) Operator that performs its action on three operand      ---> d) Operator that performs its action on any number of operands
+b
+Which is the correct example of a binary operator?
+---> a) ++                               ---> b) —
+---> c) Dereferencing operator(*)        ---> d) +
+d
+Which is the correct example of a unary operator?
+---> a) &       ---> b) ==
+---> c) —       ---> d) /
+c
+1. What is a template?
+---> a) A template is a formula for creating a generic class        ---> b) A tempelate is used to manipulate the class
+---> c) A template is used for creating the attributes              ---> d) none of the mentioned
+a
+Pick out the correct statement about string template?
+---> a) It is used to replace a string.         ---> b) It is used to replace a string with another string at runtime.
+---> c) It is used to delete a string.D. none of the mentioned
+b
+How to declare a template?
+---> a) tem                 ---> b) temp
+---> c) template < >        ---> d) none of the mentioned
+c 
+What is an exception in C++ program?
+---> a) A problem that arises during the execution of a program     ---> b) A problem that arises during compilation
+---> c) Also known as the syntax error                              ---> d) Also known as semantic error
+a
+By default, what a program does when it detects an exception?
+---> a) Continue running                        ---> b) Results in the termination of the program
+---> c) Calls other functions of the program    ---> d) Removes the exception and tells the programmer about an exception
+b
+Why do we need to handle exceptions?
+---> a) To avoid unexpected behaviour of a program during run-time      ---> b) To let compiler remove all exceptions by itself
+---> c) To successfully compile the program                             ---> d) To get correct output
+a
+            
