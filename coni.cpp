@@ -6,8 +6,6 @@ static struct termios old, neww;
 
 // clrscr() function definition
 
-
-
 /* Initialize new terminal i/o settings */
 void initTermios(int echo)
 {

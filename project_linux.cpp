@@ -64,7 +64,6 @@ void student::signup(){
 	clear(); 
     welcome();
     cout<<"\t\t\t---------------------------------------------------------------------------------";
-    cout<<"\n\t\t\t---------------------------------------------------------------------------------";
 	gotoXY(60,10);
 	cout<<"Signup";
     cout<<"\n\t\t\t---------------------------------------------------------------------------------";
@@ -162,7 +161,6 @@ void student::login(){
     clear();
 	welcome();
     cout<<"\t\t\t---------------------------------------------------------------------------------";
-    cout<<"\n\t\t\t---------------------------------------------------------------------------------";
 	gotoXY(60,10);
 	cout<<"Login";
     cout<<"\n\n\t\t\t---------------------------------------------------------------------------------";
@@ -367,8 +365,31 @@ void student::test_quiz()
                     getch();
                 }
                 else if(ans.at(0)=='E' || ans.at(0)=='e'){
-                    clear();
-                    result();
+                    total=no-2;
+                    percent=(float(win*100)/total);
+                    gotoXY(35,20);
+                    cout<<"Percentage:   "<<  percent <<"%"<<endl;
+                    ofstream outfile;
+                    outfile.open("record.txt",ios::app);
+                    student st;
+                    outfile<<name<<" "<<" "<<win<<" "<<lose<<" "<<unattempt<<" "<<reward<<" "<<total<<" "<<percent<<" "<<endl;
+                    outfile.close();
+                    ifstream infile("reward.txt");
+                    ofstream ofile;
+                    ofile.open("reward1.txt",ios::app);
+                    while(infile>>n>>r && !infile.eof()){
+                        if(name==n){
+                            ofile<<name<<" "<<reward<<endl;
+                        }
+                        else{
+                            ofile<<n<<" "<<r<<endl;
+                        }
+                    }
+                    ofile.close();
+                    infile.close();
+                    remove("reward.txt");
+                    rename("reward1.txt","reward.txt");
+                    result();   
                 }
                 else if (ans.at(0)==' ' || ans.at(0)=='\n'){
                     unattempt++;
@@ -511,7 +532,30 @@ void student::test_quiz()
                             getch();
                         }
                         else if(ans.at(0)=='E' || ans.at(0)=='e'){
-                            clear();
+                            total=no-2;
+                            percent=(float(win*100)/total);
+                            gotoXY(35,20);
+                            cout<<"Percentage:   "<<  percent <<"%"<<endl;
+                            ofstream outfile;
+                            outfile.open("record.txt",ios::app);
+                            student st;
+                            outfile<<name<<" "<<" "<<win<<" "<<lose<<" "<<unattempt<<" "<<reward<<" "<<total<<" "<<percent<<" "<<endl;
+                            outfile.close();
+                            ifstream infile("reward.txt");
+                            ofstream ofile;
+                            ofile.open("reward1.txt",ios::app);
+                            while(infile>>n>>r && !infile.eof()){
+                                if(name==n){
+                                    ofile<<name<<" "<<reward<<endl;
+                                }
+                                else{
+                                    ofile<<n<<" "<<r<<endl;
+                                }
+                            }
+                            ofile.close();
+                            infile.close();
+                            remove("reward.txt");
+                            rename("reward1.txt","reward.txt");
                             result();
                         }
                         else if (ans.at(0)==' ' || ans.at(0)=='\n'){
@@ -558,7 +602,7 @@ void student::test_quiz()
             {
             gotoXY(50,20);
             cout<<"INVALID CHOICE";
-            _getch();
+            test_quiz();
             }	
     }
     total=no-1;
@@ -570,14 +614,6 @@ void student::test_quiz()
     student st;
     outfile<<name<<" "<<" "<<win<<" "<<lose<<" "<<unattempt<<" "<<reward<<" "<<total<<" "<<percent<<" "<<endl;
     outfile.close();
-    if(percent>=50){
-        gotoXY(70,16);    
-        cout<<"Amazing! keep it up <3"<<endl;
-        }
-    else{
-        gotoXY(35,17);
-        cout<<"Can do better! <3 "<<endl;
-    }
     result();
 
 }
@@ -673,7 +709,7 @@ void student::practice_quiz()
                     }  
                     getline(in,andd);
                     if(reward>=50){
-                        gotoXY(40,20);
+                        gotoXY(30,20);
                         cout<<"Hint: "<<andd;
                         reward=reward-50;
                         gotoXY(50,18);
@@ -735,7 +771,30 @@ void student::practice_quiz()
                     }
                 }
                 else if(ans.at(0)=='E' || ans.at(0)=='e'){
-                    clear();
+                    total=no-2;
+                    percent=(float(win*100)/total);
+                    gotoXY(35,20);
+                    cout<<"Percentage:   "<<  percent <<"%"<<endl;
+                    ofstream outfile;
+                    outfile.open("record.txt",ios::app);
+                    student st;
+                    outfile<<name<<" "<<" "<<win<<" "<<lose<<" "<<unattempt<<" "<<reward<<" "<<total<<" "<<percent<<" "<<endl;
+                    outfile.close();
+                    ifstream infile("reward.txt");
+                    ofstream ofile;
+                    ofile.open("reward1.txt",ios::app);
+                    while(infile>>n>>r && !infile.eof()){
+                        if(name==n){
+                            ofile<<name<<" "<<reward<<endl;
+                        }
+                        else{
+                            ofile<<n<<" "<<r<<endl;
+                        }
+                    }
+                    ofile.close();
+                    infile.close();
+                    remove("reward.txt");
+                    rename("reward1.txt","reward.txt");
                     result();
                 }
                 else if (ans.at(0)==' ' || ans.at(0)=='\n'){
@@ -944,7 +1003,30 @@ void student::practice_quiz()
                             }
                         }
                         else if(ans.at(0)=='E' || ans.at(0)=='e'){
-                            clear();
+                            total=no-2;
+                            percent=(float(win*100)/total);
+                            gotoXY(35,20);
+                            cout<<"Percentage:   "<<  percent <<"%"<<endl;
+                            ofstream outfile;
+                            outfile.open("record.txt",ios::app);
+                            student st;
+                            outfile<<name<<" "<<" "<<win<<" "<<lose<<" "<<unattempt<<" "<<reward<<" "<<total<<" "<<percent<<" "<<endl;
+                            outfile.close();
+                            ifstream infile("reward.txt");
+                            ofstream ofile;
+                            ofile.open("reward1.txt",ios::app);
+                            while(infile>>n>>r && !infile.eof()){
+                                if(name==n){
+                                    ofile<<name<<" "<<reward<<endl;
+                                }
+                                else{
+                                    ofile<<n<<" "<<r<<endl;
+                                }
+                            }
+                            ofile.close();
+                            infile.close();
+                            remove("reward.txt");
+                            rename("reward1.txt","reward.txt");
                             result();
                         }
                         else if (ans.at(0)==' ' || ans.at(0)=='\n'){
@@ -970,7 +1052,7 @@ void student::practice_quiz()
                       }while(count!=(12+((chap[j]-1)*12)));
                     j++;
                     }while(j < no_of_chaps);
-                    ifstream infile("reward.txt");
+            ifstream infile("reward.txt");
             ofstream ofile;
             ofile.open("reward1.txt",ios::app);
             while(infile>>n>>r && !infile.eof()){
@@ -1079,8 +1161,10 @@ void student::class_result(){
     cout<<"| .------------------------------------------------------------------------------------------------. |";
     string u;
     int w,l,un,r,t,p;
-    gotoXY(f+1,12);
-    cout<<"| |"<<setw(10)<<"Win"<<setw(15)<<"Lose"<<setw(15)<<"Unattempt"<<setw(15)<<"Reward"<<setw(15)<<"Total"<<setw(15)<<"Percent"<<"| |"<<endl;
+    gotoXY(f,12);
+    cout<<"| |                                                                                               | |";
+    gotoXY(f+4,12);
+    cout<<setw(10)<<"Win"<<setw(15)<<"Lose"<<setw(15)<<"Unattempt"<<setw(15)<<"Reward"<<setw(15)<<"Total"<<setw(15)<<"Percent"<<endl;
     ifstream infile("record.txt");
     infile>>u>>w>>l>>un>>r>>t>>p;
     do{
@@ -1147,7 +1231,19 @@ void student::zeroscreen()		//simply desgin screen
 
 void student::firstscreen()		//simply desgin screen
 {
-	clear(); 
+    string u;
+    int w,l,un,r,t,p;
+    ifstream infile("record.txt");
+    ofstream ofile;
+    ofile.open("record1.txt",ios::app);
+    while(infile>>u>>w>>l>>un>>r>>t>>p && !infile.eof()){
+        ofile<<u<<" "<<w<<" "<<l<<" "<<un<<" "<<r<<" "<<t<<" "<<p<<endl;
+    }
+    ofile.close();
+    infile.close();
+    remove("record.txt");
+    rename("record1.txt","record.txt");
+    clear(); 
 	welcome();
     cout<<"\n\t\t\t---------------------------------------------------------------------------------";
     gotoXY(50,14);

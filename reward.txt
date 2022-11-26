@@ -1,4 +1,4 @@
-Tina 380
+Tina 860
 Name 50
 Tina1 50
 Tina2 50
