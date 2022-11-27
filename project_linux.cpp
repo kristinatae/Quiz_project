@@ -1181,8 +1181,9 @@ void student::class_result(){
     cout<<"| .----------------------------------------------------------------------------------------------. |";
     gotoXY(f,y+1+i);
     cout<<".--------------------------------------------------------------------------------------------------.";
-    cout<<endl;
-    cout<<"Exit: ";
+    gotoXY(60,24);
+    cout<<"Next: ";
+    gotoXY(70,24);
     getch();
     firstscreen(); 
 }
@@ -1222,7 +1223,10 @@ void student::zeroscreen()		//simply desgin screen
 	        {
             gotoXY(50,20);
             cout<<"INVALID CHOICE";
-            _getch();
+            gotoXY(50,21);
+            cout<<"Next: ";
+            gotoXY(60,21);
+            getch();
             zeroscreen();
 		}		
 	}
@@ -1281,17 +1285,17 @@ void student::firstscreen()		//simply desgin screen
 	    case 3:
 			{
 			clear();
-			cout<<"Instruction";
 			info();
-			_getch();
+            gotoXY(60,24);
+            cout<<"Next: ";
+            gotoXY(70,24);
+            getch();
 			firstscreen();
 			break;
 			}
 	    case 4:
 			{
-            _getch();
 			class_result();
-			_getch();
 			break;
 			}
         case 5:
@@ -1302,7 +1306,10 @@ void student::firstscreen()		//simply desgin screen
 	    default:
             {
 			cout<<"/n INVALID CHOICE";
-            _getch();
+            gotoXY(60,24);
+            cout<<"Next: ";
+            gotoXY(70,24);
+            getch();
             firstscreen();
 	        }
 }
