@@ -1,10 +1,1 @@
-Tina 320
-Name 50
-Tina1 50
-Tina2 50
-Th 50
-Tina12 50
-Ttt12 50
-Kaku 200
-Tina123 50
-Tina 320
+Stores your reward points
