@@ -1,9 +1,1 @@
-Tina 5 0 0 710 5 100
-Tina 1 2 0 590 3 33
-Tina 0 6 0 590 6 0
-Tina 5 0 0 740 5 100
-Tina 5 0 0 740 5 100
-Tina 4 2 0 860 6 66
-Tina 5 0 0 200 5 100
-Tina 2 4 0 260 6 33
-Tina 2 0 0 320 2 100
+To add your progress
